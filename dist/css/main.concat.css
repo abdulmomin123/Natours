@@ -1242,13 +1242,13 @@ body {
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
-    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
   .row .col-2-of-4 {
-    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
-    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
   position: relative;
@@ -1303,6 +1303,7 @@ body {
   text-align: center;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: all 0.2s;
   z-index: 5; }
   @media only screen and (max-width: 56.25em) {
     .navigation__button {
@@ -1336,10 +1337,11 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   height: 100vh;
-  width: 0%;
-  visibility: hidden;
   opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: 4; }
 
@@ -1384,7 +1386,7 @@ body {
 .navigation__checkbox:checked ~ .navigation__nav {
   visibility: visible;
   opacity: 1;
-  width: 100%; }
+  transform: scale(1); }
 
 .navigation__icon {
   position: relative;
