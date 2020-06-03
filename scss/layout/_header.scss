@@ -1,0 +1,62 @@
+.header {
+  position: relative;
+  height: 95vh;
+  /* Liner Gradient on top of BG */
+  /* We are also specifing the direction of the Gradiend */
+  /* background: linear-gradient(to top, #7ed56f, #28b485);
+  background: linear-gradient(to right, #7ed56f, #28b485);
+  background: linear-gradient(to bottom, #7ed56f, #28b485);
+  background: linear-gradient(to left, #7ed56f, #28b485); */
+
+  /* We can also specify two gradient directions at the same time */
+  background: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url("/dist/img/hero-small.jpg") no-repeat center top/cover;
+
+  /* background-position: top; */
+
+  /* Using Clip-Path for making the curved effect */
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @include respond(tab-port) {
+    margin-bottom: 4rem;
+  }
+
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5625em),
+    only screen and (min-width: 112.5em) {
+    background: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.8),
+        rgba($color-primary-dark, 0.8)
+      ),
+      url("/dist/img/hero.jpg") no-repeat center top/cover;
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    width: auto;
+    height: 3.5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+}
