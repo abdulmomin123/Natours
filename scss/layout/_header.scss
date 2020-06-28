@@ -14,7 +14,7 @@
       rgba($color-primary, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
-    url("/dist/img/hero-small.jpg") no-repeat center top/cover;
+    url("../img/hero-small.jpg") no-repeat center top/cover;
 
   /* background-position: top; */
 
@@ -38,7 +38,7 @@
         rgba($color-primary, 0.8),
         rgba($color-primary-dark, 0.8)
       ),
-      url("/dist/img/hero.jpg") no-repeat center top/cover;
+      url("../img/hero.jpg") no-repeat center top/cover;
   }
 
   &__logo-box {

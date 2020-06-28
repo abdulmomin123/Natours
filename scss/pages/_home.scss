@@ -20,7 +20,7 @@
       rgba($color-primary, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
-    url("/dist/img/nat-4-small.jpg") no-repeat center top/cover;
+    url("../img/nat-4-small.jpg") no-repeat center top/cover;
 
   transform: skewY(-7deg);
 
@@ -39,7 +39,7 @@
         rgba($color-primary, 0.8),
         rgba($color-primary-dark, 0.8)
       ),
-      url("/dist/img/nat-4.jpg") no-repeat center top/cover;
+      url("../img/nat-4.jpg") no-repeat center top/cover;
   }
 }
 
@@ -82,7 +82,7 @@
       rgba($color-white, 0.8) 50%,
       rgba(black, 0) 50%
     ),
-    url("/dist/img/nat-10-small.jpg") center center/cover;
+    url("../img/nat-10-small.jpg") center center/cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
@@ -93,7 +93,7 @@
         rgba($color-white, 0.8) 70%,
         rgba(black, 0) 70%
       ),
-      url("/dist/img/nat-10-small.jpg") center center/cover;
+      url("../img/nat-10-small.jpg") center center/cover;
   }
 
   @include respond(tab-port) {
@@ -102,7 +102,7 @@
         rgba($color-white, 0.8) 0%,
         rgba($color-white, 0.8) 100%
       ),
-      url("/dist/img/nat-10-small.jpg") center center/cover;
+      url("../img/nat-10-small.jpg") center center/cover;
   }
 
   @media (min-resolution: 192dpi) and (min-width: 37.5625em),
@@ -113,7 +113,7 @@
         rgba($color-white, 0.8) 50%,
         rgba(black, 0) 50%
       ),
-      url("/dist/img/nat-10.jpg") center center/cover;
+      url("../img/nat-10.jpg") center center/cover;
   }
 
   &__form {
