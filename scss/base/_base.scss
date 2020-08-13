@@ -39,6 +39,13 @@ body {
   }
 }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 ::selection {
   background: $color-primary;
   color: $color-white;
